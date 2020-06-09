@@ -1,0 +1,27 @@
+def number(x,y):
+    m=2
+    n=2
+    g=y
+    t=x
+    if(y>x):
+        while(t!=g):
+            t=x*n
+            if (t>g):
+                g=y*m
+                m=m+1
+                n=n+1
+            else:
+                n=n+1
+        print ("LCM is:",t)
+    else:
+        while(g!=t):
+            g=y*n
+            if(g>t):
+                t=x*m
+                m=m+1
+                n=n+1
+            else:
+                n=n+1
+        print("LCM is:",g)
+number(6,4)
+print("finish")
